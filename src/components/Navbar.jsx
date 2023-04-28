@@ -24,7 +24,7 @@ const Navbar = () => {
             src={logo}
             alt="logo"
             className="w-20 h-20 object-contain #2563eb"
-          />
+          /> &nbsp;
           <p className="text-[#9FCFCFC] text-[18px] font-bold cursor-pointer flex">
             Jing
            &nbsp; <span className="sm:block hidden">| Portfolio</span>
@@ -36,7 +36,7 @@ const Navbar = () => {
               key={Link.id}
               className={`${
                 active === Link.title ? " text-white" : "text-[#FCFCFC]"
-              } hover:text-[#915EFF] text-[18px] font-medium cursor-pointer`}
+              } hover:text-[#E575EF] text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(Link.title)}
             >
               <a href={`#${Link.id}`}>{Link.title}</a>
