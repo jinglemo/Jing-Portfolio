@@ -15,14 +15,14 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  todomagotchi,
+  frey,
+  happyhour,
+  iconlogo,
   threejs,
+  grace,
+  githubhero,
+  linkedinhero,
 } from "../assets";
 
 export const navLinks = [
@@ -38,15 +38,17 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+
+  
 ];
 
 const services = [
   {
-    title: "Web Developer",
+    title: "FullStack Developer",
     icon: web,
   },
   {
-    title: "Progressive Web Developer",
+    title: "React Native Developer",
     icon: mobile,
   },
   {
@@ -118,7 +120,7 @@ const experiences = [
   {
     title: "Software Engineer Student",
     company_name: "Grace Hopper Academy",
-    icon: starbucks,
+    icon: grace,
     iconBg: "#383E56",
     date: "Novmeber 2022 - April 2023",
     points: [
@@ -129,44 +131,19 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "FullStck Web Developer",
+    company_name: "Freelancer",
+    icon: iconlogo,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "April 2023 - Current ",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Develop custom web applications tailored to clients' needs, including frontend design, backend development, and API integration using various web development frameworks and technologies.",
+      "Improve website performance by optimizing code, implementing caching strategies, and reducing page load times, and providing ongoing support and maintenance for efficient website operation.",
+      "Develop responsive and mobile-friendly websites that provide a seamless user experience across all screen sizes and devices, utilizing responsive design principles to automatically adjust to different screen sizes and resolutions.",
+      "Provide ongoing support and maintenance, including regular updates, bug fixes, and security patches, and offer technical support and troubleshooting to ensure websites and web applications are secure, up-to-date, and running smoothly, building long-term relationships with clients based on exceptional service and value.",
     ],
   },
-  // {
-  //   title: "Web Developer",
-  //   company_name: "Shopify",
-  //   icon: shopify,
-  //   iconBg: "#383E56",
-  //   date: "Jan 2022 - Jan 2023",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
-  // {
-  //   title: "Full stack Developer",
-  //   company_name: "Meta",
-  //   icon: meta,
-  //   iconBg: "#E6DEDD",
-  //   date: "Jan 2023 - Present",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
+  
 ];
 
 const testimonials = [
@@ -196,11 +173,23 @@ const testimonials = [
   },
 ];
 
+const navIcons = [
+  {
+    name: "githubhero",
+    icon: githubhero,
+    link: "https://github.com/jinglemo",
+  },
+  {
+    name: "linkedinhero",
+    icon: linkedinhero
+  },
+]
+
 const projects = [
   {
     name: "TodoMagotchi",
     description:
-      "ToDoMagotchi is a To-Do app that encourages productivity by adding experience points to a virtual pet when tasks are completed.",
+      "ToDoMagotchi is a To-Do app that encourages productivity by adding experience points to a virtual pet that grows and transforms when tasks are completed.",
     tags: [
       {
         name: "react",
@@ -215,7 +204,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    // image: ,
+    image: todomagotchi,
     source_code_link:
       "https://github.com/Capstone-Project-Team-ToDomagotchi/todomagotchi",
   },
@@ -237,7 +226,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    // image: jobit,
+    image: frey,
     source_code_link: "https://github.com/f-smiles/f-smiles",
   },
   {
@@ -258,10 +247,11 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    // image: tripguide,
+    image: happyhour,
     source_code_link:
       "https://github.com/GraceShopper-Jing-Malinda-Mandy-Wanyi/Grace-Shopper",
+    web_link: "https://graceshopper-jing-malinda-mandy-wanyi.onrender.com/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { navIcons, services, technologies, experiences, testimonials, projects };

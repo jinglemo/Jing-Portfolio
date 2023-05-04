@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
-import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { navLinks, navIcons } from "../constants";
+import { logo, menu, close, githubhero} from "../assets";
 
-const Navbar = () => {
+const Navbar = ({link}) => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
@@ -23,12 +23,22 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            className="w-20 h-20 object-contain #2563eb"
+            className="w-12 h-20 object-contain #2563eb"
           /> &nbsp;
           <p className="text-[#9FCFCFC] text-[18px] font-bold cursor-pointer flex">
             Jing
-           &nbsp; <span className="sm:block hidden">| Portfolio</span>
+           &nbsp; <span className="sm:block hidden">|&nbsp; Portfolio</span>
           </p>
+          <div
+              onClick={() => window.open(link, "_blank")}
+              className=" w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={githubhero}
+                alt="githubhero"
+                className="w-1/2 h-1/2 object-contain"
+              />
+            </div>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((Link) => (
@@ -72,6 +82,8 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+                  
+
           </div>
         </div>
       </div>

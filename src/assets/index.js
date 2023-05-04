@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import weblink from "./weblink.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -21,16 +22,24 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import grace from "./company/grace.png";
+import iconlogo from "./company/iconlogo1.png"
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import githubhero from "./githubhero.png"
+import linkedinhero from "./linkedinhero.png"
+import frey from "./frey.png"
+import happyhour from "./happyhour.png"
+import todomagotchi from "./todomagotchi.png"
 
 export {
+  githubhero,
+  linkedinhero,
+  weblink,
+  iconlogo,
+  grace,
+  todomagotchi,
+  frey,
+  happyhour,
   logo,
   backend,
   creator,
@@ -52,11 +61,4 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
 };

@@ -9,8 +9,8 @@ import { textVariant } from "../utils/motion"
 const ExperienceCard = ({experience}) => (
   <VerticalTimelineElement
   contentStyle={{background: '#915eff',
-  color: "#533ddd"}}
-  contentArrowStyle={{borderRight: '7px solid #232631'}}
+  color: "#E575EF"}}
+  contentArrowStyle={{borderRight: '7px solid #915eff'}}
   date={experience.date}
   iconStyle={{background: experience.iconBg}}
   icon={
@@ -45,7 +45,7 @@ const Experience = () => {
     <>
     <motion.div variants={textVariant()}>
       <p className={styles.sectionSubText}>What I Have Done So Far</p>
-      <h2 className={styles.sectionHeadText}>Work Experience</h2>
+      <h2 className={styles.sectionHeadText}>Experiences</h2>
     </motion.div>
 
     <div className="mt-20 flex flex-col ">
@@ -59,4 +59,4 @@ const Experience = () => {
   )
 }
 
-export default SectionWrapper(Experience, "work")
+export default SectionWrapper(Experience, "experience")

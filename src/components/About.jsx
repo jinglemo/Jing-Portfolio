@@ -35,7 +35,7 @@ const About = () => {
       </motion.div>
       <motion.p variants={fadeIn("", "", 0.1, 1)}
       className="mt-4 text-secondary text-[]17px max-w-3xl leading-[30px]">
-        As a software developer, I specialize in developing robust and efficient
+        As a software engineer, I specialize in developing robust and efficient
         web applications using the PERN stack and JavaScript. What drives my
         passion is the opportunity to create, build, and solve problems. I enjoy
         the challenge of identifying unique problems and finding creative
