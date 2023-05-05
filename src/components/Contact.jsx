@@ -88,7 +88,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
-              className='bg-[#FCFCFC] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-[#FCFCFC] py-4 px-6 placeholder:text-secondary text-[#533DDD] rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
@@ -99,7 +99,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className='bg-[#FCFCFC] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-[#FCFCFC] py-4 px-6 placeholder:text-secondary text-[#533DDD] rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
@@ -110,7 +110,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='What do you want inquiry about?'
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-[#FCFCFC] py-4 px-6 placeholder:text-secondary text-[#533DDD] rounded-lg outline-none border-none font-medium'
             />
           </label>
 
