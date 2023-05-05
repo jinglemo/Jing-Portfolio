@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks, navIcons } from "../constants";
-import { logo, menu, close, githubhero} from "../assets";
+import { logo, menu, close, githubhero, linkedinhero } from "../assets";
 
-const Navbar = ({link}) => {
+const Navbar = ({ link }) => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
@@ -24,18 +24,29 @@ const Navbar = ({link}) => {
             src={logo}
             alt="logo"
             className="w-12 h-20 object-contain #2563eb"
-          /> &nbsp;
+          />{" "}
+          &nbsp;
           <p className="text-[#9FCFCFC] text-[18px] font-bold cursor-pointer flex">
-            Jing
-           &nbsp; <span className="sm:block hidden">|&nbsp; Portfolio</span>
+            Jing &nbsp;{" "}
+            <span className="sm:block hidden">|&nbsp; Portfolio</span>
           </p>
           <div
-              onClick={() => window.open(link, "_blank")}
+              onClick={() => window.open("https://github.com/jinglemo", "_blank")}
               className=" w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
                 src={githubhero}
                 alt="githubhero"
+                className="w-1/2 h-1/2 object-contain"
+              />
+            </div>
+          <div
+              onClick={() => window.open("https://www.linkedin.com/in/jing-yi-mo/", "_blank")}
+              className=" w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img
+                src={linkedinhero}
+                alt="linkedinhero"
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
@@ -72,18 +83,16 @@ const Navbar = ({link}) => {
                   key={Link.id}
                   className={`${
                     active === Link.title ? " text-white" : "text-secondary"
-                  } font-poppins font-medium cursor-pointer text-[16px]`
-                 }
-                 onClick={() => {
-                  setToggle(!toggle)
-                  setActive(Link.title)}}
+                  } font-poppins font-medium cursor-pointer text-[16px]`}
+                  onClick={() => {
+                    setToggle(!toggle);
+                    setActive(Link.title);
+                  }}
                 >
                   <a href={`#${Link.id}`}>{Link.title}</a>
                 </li>
               ))}
             </ul>
-                  
-
           </div>
         </div>
       </div>
