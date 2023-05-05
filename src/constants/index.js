@@ -131,7 +131,7 @@ const experiences = [
     ],
   },
   {
-    title: "FullStck Web Developer",
+    title: "Full-stack Web Developer",
     company_name: "Freelancer",
     icon: iconlogo,
     iconBg: "#E6DEDD",
