@@ -122,7 +122,7 @@ const experiences = [
     company_name: "Grace Hopper Academy",
     icon: grace,
     iconBg: "#383E56",
-    date: "Novmeber 2022 - April 2023",
+    date: "Novemeber 2022 - April 2023",
     points: [
       "Immersive training in full-stack web development, utilizing software development best practices and technologies such as PostgreSQL, Express.js, React, Redux, and Node.js. It is a full-time program designed to equip participants with the skills necessary to become proficient in web development.",
       "Developing and maintaining web applications using React.js and other related technologies.",
