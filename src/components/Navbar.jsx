@@ -9,7 +9,7 @@ const Navbar = ({ link }) => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center fixed top-0 z-20 bg-[#533DDD]`}
+      className={`${styles.paddingX} w-full flex items-center fixed top-0 z-20 bg-[#915EFF]`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -20,11 +20,11 @@ const Navbar = ({ link }) => {
             window.scrollTo(0, 0);
           }}
         >
-          <img
+          {/* <img
             src={logo}
             alt="logo"
             className="w-12 h-20 object-contain #2563eb"
-          />{" "}
+          />{" "} */}
           &nbsp;
           <p className="text-[#9FCFCFC] text-[18px] font-bold cursor-pointer flex">
             Jing &nbsp;{" "}
@@ -32,7 +32,7 @@ const Navbar = ({ link }) => {
           </p>
           <div
               onClick={() => window.open("https://github.com/jinglemo", "_blank")}
-              className=" w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="w-12 h-20 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
                 src={githubhero}
@@ -42,7 +42,7 @@ const Navbar = ({ link }) => {
             </div>
           <div
               onClick={() => window.open("https://www.linkedin.com/in/jing-yi-mo/", "_blank")}
-              className=" w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="w-12 h-20rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
                 src={linkedinhero}

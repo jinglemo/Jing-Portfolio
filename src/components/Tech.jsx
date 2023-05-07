@@ -13,7 +13,7 @@ const Tech = () => {
         <p className={styles.sectionSubText}>What I know</p>
         <h2 className={styles.sectionHeadText}>Technologies</h2>
       </motion.div>
-      <div className="flex flex-row flex-wrap justify-center gap-10 pt-10">
+      <div className="flex flex-row flex-wrap justify-center gap-10 pt-10 ">
         {technologies.map((technology) => (
           <div className="w-28 h-28" key={technology.name}>
             <BallCanvas icon={technology.icon} />
